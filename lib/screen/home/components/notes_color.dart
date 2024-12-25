@@ -287,7 +287,7 @@ class ColorButton extends StatelessWidget {
                               style: TextStyle(
                                   color: Theme.of(context)
                                       .textTheme
-                                      .bodyText1!
+                                      .bodyLarge!
                                       .color),
                             )
                           : Text(
@@ -295,7 +295,7 @@ class ColorButton extends StatelessWidget {
                               style: TextStyle(
                                   color: Theme.of(context)
                                       .textTheme
-                                      .bodyText1!
+                                      .bodyLarge!
                                       .color),
                             ),
                     ),
@@ -323,11 +323,11 @@ class ColorButton extends StatelessWidget {
                       icon: colorPosition == colorPicker.positionColor
                           ? Icon(
                               Icons.done,
-                              color: Theme.of(context).backgroundColor,
+                              color: Theme.of(context).canvasColor,
                             )
                           : Icon(
                               Icons.delete,
-                              color: Theme.of(context).backgroundColor,
+                              color: Theme.of(context).canvasColor,
                             ),
                     )
                   ],

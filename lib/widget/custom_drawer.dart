@@ -57,7 +57,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                           color: Theme.of(context).iconTheme.color),
                       title: TextFormField(
                         style: TextStyle(
-                          color: Theme.of(context).textTheme.bodyText1!.color,
+                          color: Theme.of(context).textTheme.bodyLarge!.color,
                         ),
                       ),
                       trailing: IconButton(

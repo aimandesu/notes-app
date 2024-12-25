@@ -59,7 +59,7 @@ class NoteNavBar extends StatelessWidget {
             child: Container(
               width: mediaQuery.size.width * 1,
               // height: 50,
-              color: posColor.backgroundColor,
+              color: posColor.canvasColor,
               child: Row(
                 children: [
                   IconButton(

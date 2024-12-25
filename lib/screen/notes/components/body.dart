@@ -120,8 +120,8 @@ class _BodyState extends State<Body> {
                   bottomLeft: Radius.circular(25),
                   bottomRight: Radius.circular(25),
                 ),
-                border: Border.all(
-                    width: 1, color: widget.posColor.backgroundColor),
+                border:
+                    Border.all(width: 1, color: widget.posColor.canvasColor),
               ),
               // height: (mediaQuery.size.height - widget.excessivePadding) * 0.09,
               width: mediaQuery.size.width * 1,
@@ -135,13 +135,13 @@ class _BodyState extends State<Body> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
-                      color: Theme.of(context).textTheme.bodyText1!.color,
+                      color: Theme.of(context).textTheme.bodyLarge!.color,
                     ),
                     textAlign: TextAlign.justify,
                     decoration: InputDecoration.collapsed(
                       hintText: 'Title',
                       hintStyle: TextStyle(
-                        color: Theme.of(context).textTheme.bodyText1!.color,
+                        color: Theme.of(context).textTheme.bodyLarge!.color,
                       ),
                     ),
                     onSaved: (value) {
@@ -226,7 +226,7 @@ class _BodyState extends State<Body> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
-                      color: Theme.of(context).textTheme.bodyText1!.color,
+                      color: Theme.of(context).textTheme.bodyLarge!.color,
                     ),
                     maxLines: null,
                     // style: const TextStyle(fontSize: 16),
@@ -234,7 +234,7 @@ class _BodyState extends State<Body> {
                     decoration: InputDecoration.collapsed(
                       hintText: 'Content',
                       hintStyle: TextStyle(
-                        color: Theme.of(context).textTheme.bodyText1!.color,
+                        color: Theme.of(context).textTheme.bodyLarge!.color,
                       ),
                     ),
                     onSaved: (value) {

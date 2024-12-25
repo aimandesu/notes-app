@@ -81,7 +81,7 @@ class NotesList extends StatelessWidget {
               child: Text(
                 'No notes has been saved so far',
                 style: TextStyle(
-                  color: posColor.backgroundColor,
+                  color: posColor.canvasColor,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.italic,
                   fontSize: 20,

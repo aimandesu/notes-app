@@ -67,12 +67,11 @@ class _NotesEachGridState extends State<NotesEachGrid> {
           // width: mediaQuery.size.width * 0.5,
           margin: const EdgeInsets.all(3),
           decoration: BoxDecoration(
-            color:
-                onTap ? widget.color.backgroundColor : widget.color.canvasColor,
+            color: onTap ? widget.color.canvasColor : widget.color.canvasColor,
             borderRadius: const BorderRadius.all(
               Radius.circular(10),
             ),
-            border: Border.all(width: 1, color: widget.color.backgroundColor),
+            border: Border.all(width: 1, color: widget.color.canvasColor),
           ),
           child: Column(
             children: [
@@ -83,7 +82,7 @@ class _NotesEachGridState extends State<NotesEachGrid> {
                 style: TextStyle(
                   color: onTap
                       ? widget.color.canvasColor
-                      : Theme.of(context).textTheme.bodyText1!.color,
+                      : Theme.of(context).textTheme.bodyLarge!.color,
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
                 ),
@@ -101,7 +100,7 @@ class _NotesEachGridState extends State<NotesEachGrid> {
                   style: TextStyle(
                     color: onTap
                         ? widget.color.canvasColor
-                        : Theme.of(context).textTheme.bodyText1!.color,
+                        : Theme.of(context).textTheme.bodyLarge!.color,
                   ),
                 ),
               )

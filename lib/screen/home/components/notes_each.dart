@@ -69,14 +69,13 @@ class _NotesEachState extends State<NotesEach> {
           vertical: 5,
         ),
         decoration: BoxDecoration(
-          color:
-              onTap ? widget.color.backgroundColor : widget.color.canvasColor,
+          color: onTap ? widget.color.canvasColor : widget.color.canvasColor,
           borderRadius: const BorderRadius.all(
             Radius.circular(25),
           ),
           border: Border.all(
             width: 1,
-            color: widget.color.backgroundColor,
+            color: widget.color.canvasColor,
           ),
         ),
         child: Row(
@@ -97,7 +96,7 @@ class _NotesEachState extends State<NotesEach> {
                         style: TextStyle(
                           color: onTap
                               ? widget.color.canvasColor
-                              : Theme.of(context).textTheme.bodyText1!.color,
+                              : Theme.of(context).textTheme.bodyLarge!.color,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
@@ -111,7 +110,7 @@ class _NotesEachState extends State<NotesEach> {
                     style: TextStyle(
                       color: onTap
                           ? widget.color.canvasColor
-                          : Theme.of(context).textTheme.bodyText1!.color,
+                          : Theme.of(context).textTheme.bodyLarge!.color,
                     ),
                   ),
                 ],

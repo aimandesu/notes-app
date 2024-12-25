@@ -46,11 +46,11 @@ class ColorControl with ChangeNotifier {
       //int to color again, then paste it there
       return ThemeData(
         primarySwatch: Colors.green,
-        backgroundColor: Colors.green,
+        primaryColorDark: Colors.green,
         cardColor: Colors.white,
         canvasColor: Colors.grey.shade900,
         textTheme: const TextTheme(
-          bodyText1: TextStyle(color: Colors.white),
+          bodyLarge: TextStyle(color: Colors.white),
         ),
         iconTheme: const IconThemeData(color: Colors.white),
       ); //return themedata here
@@ -64,11 +64,11 @@ class ColorControl with ChangeNotifier {
       //     themeString!)); //return theme data here but based on position
       return ThemeData(
         primarySwatch: materialColor,
-        backgroundColor: translateToColor(elementAt.backgroundColor),
+        primaryColor: translateToColor(elementAt.backgroundColor),
         cardColor: translateToColor(elementAt.cardColor),
         canvasColor: translateToColor(elementAt.canvasColor),
         textTheme: TextTheme(
-          bodyText1: TextStyle(color: translateToColor(elementAt.textTheme)),
+          bodyLarge: TextStyle(color: translateToColor(elementAt.textTheme)),
         ),
         iconTheme: IconThemeData(color: translateToColor(elementAt.iconTheme)),
       );
